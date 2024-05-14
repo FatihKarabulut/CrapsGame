@@ -10,6 +10,7 @@
              <variable name="muser" type="int" />
              <variable name="mbot" type="int" />
              <variable name="random" type="int" />
+             <variable name="check" type="boolean" />
              <variable name="mrand" type="String" />
              <variable name="views" type="ActivityLoginListener" />
     </data>
@@ -153,6 +154,7 @@
         android:textSize="20dp"
         android:gravity="center"
         android:backgroundTint="@color/cardview_shadow_start_color"
+        android:enabled="@{check}"
         android:onClick="@{() -> views.handlerGetButtonClicked()}"
 
         />

@@ -30,6 +30,7 @@ class LoginActivity : AppCompatActivity() {
         mBinding.mbot = 0
         mBinding.muser = 0
         mBinding.mrand = "7,11"
+        mBinding.check = true
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -87,8 +88,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
     fun getButtonClicked() {
-        var a = 5
-
+        mBinding.check = false
 
         object : CountDownTimer(5000, 1000) {
             override fun onTick(ms: Long) {
@@ -119,6 +119,7 @@ class LoginActivity : AppCompatActivity() {
                     crapsRandomNumbers()
 
                 crapsControls()
+                mBinding.check = true
             }
         }.start()
 

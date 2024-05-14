@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mor">#EA165E</color>
+    <color name="lacivert">#F54F5DE1</color>
+    <color name="mavi">#19A0DF</color>
+    <color name="mor1">#9C27B0</color>
+    <color name="sarı">#E3C607</color>
+    <color name="yeşil">#296E1A</color>
+    <color name="sarı2">#AAA20C</color>
+    <color name="koyu_mor">#7616AA</color>
+    <color name="grey">#85C4C0C6</color>
+</resources>

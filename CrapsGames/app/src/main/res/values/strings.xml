@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CrapsGames</string>
+    <string name="edit_text_nickname">Nick Name</string>
+    <string name="edit_text_password">Password</string>
+    <string name="button_text_login">Login</string>
+    <string name="button_text_register">Register</string>
+    <string name="edit_text_name">Name</string>
+    <string name="edit_text_email">Nick Name</string>
+    <string name="edit_text_confirm_password">Confirm Password</string>
+    <string name="alert_dialog_title">Uyarı</string>
+    <string name="alert_dialog_pass_message">Şifreler uyuşmamaktadır</string>
+    <string name="alert_dialog_blank_message">Boş alanları doldururnuz</string>
+    <string name="alert_dialog_neaturalbutton">OK</string>
+    <string name="login_text_view_0">0</string>
+    <string name="text_view_user">User</string>
+    <string name="text_view_bot">Bot</string>
+    <string name="button_text_get">Get</string>
+    <string name="buton_text_close">Close</string>
+
+</resources>

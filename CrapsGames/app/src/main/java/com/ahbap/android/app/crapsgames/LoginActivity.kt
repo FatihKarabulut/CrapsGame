@@ -95,7 +95,7 @@ class LoginActivity : AppCompatActivity() {
                 GlobalScope.launch {
                     var mSecond = ms.toInt()
                     while (mSecond > 0) {
-                        mBinding.random = Random.nextInt(1, 12)
+                        mBinding.random = Random.nextInt(1, 7) + Random.nextInt(1, 7)
                         Thread.sleep(500)
                         mSecond /= 1000
                     }

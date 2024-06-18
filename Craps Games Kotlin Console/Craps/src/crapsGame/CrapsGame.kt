@@ -53,7 +53,7 @@ object CrapsGame{
         try {
             while (a-- > 0)
             {
-                val random = Random.nextInt(1,10)
+                val random = Random.nextInt(2,13)
                 print("\r (  $random  )  ")
                     Thread.sleep(500)
             }
@@ -68,10 +68,12 @@ object CrapsGame{
             println(ex)
         }
 
-        val n = Random.nextInt(1,10)
-        print("\r (  $n  )  \n")
-        println("\r çıkan Sayı $n")
-        return n
+        val n = Random.nextInt(1,7)
+        val n1 = Random.nextInt(1,7)
+        val sum = n + n1
+        print("\r (  $sum  )  \n")
+        println("\r çıkan Sayı $sum")
+        return sum
     }
     private fun craps()
     {
@@ -84,16 +86,17 @@ object CrapsGame{
             println("User 1 arttı \n User $m_User --- $m_Bot Bot")
             Bound = true
         }
-         if (n == 2 || n == 3 || n == 12)
+         else if (n == 2 || n == 3 || n == 12)
         {
             ++m_Bot
             println("Bot 1 arttı \n User $m_User --- $m_Bot Bot")
             Bound = true
         }
 
-
+        else {
             m_User_Bound = n
             Bound = false
+        }
 
 
     }

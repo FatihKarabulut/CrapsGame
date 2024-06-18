@@ -49,7 +49,7 @@ public class Craps{
         while (a-- > 0)
         {
             try {
-                System.out.printf("\r (%d) ",random.nextInt(1,12));
+                System.out.printf("\r (%d) ",random.nextInt(2,12));
 
                 Thread.sleep(500L);
             }
@@ -59,10 +59,14 @@ public class Craps{
             }
 
         }
-        var n = random.nextInt(1,9);
-        System.out.printf("\r (%d) %n",n);
-        System.out.printf("çıkan sayı %d%n",n);
-        return n;
+        var n = random.nextInt(1,6);
+        var n1 = random.nextInt(1,6);
+        var sum = n + n1;
+
+
+        System.out.printf("\r (%d) %n",sum);
+        System.out.printf("çıkan sayı %d%n",sum);
+        return sum;
     }
     private void crapsFlagFalse()
     {
@@ -89,7 +93,7 @@ public class Craps{
     }
     private void crapsFlagTrue()
     {
-
+        System.out.printf("çıkartmanız gereken sayı %d%n",m_User_Bound);
         var n = randomNumber();
 
         if (n == m_User_Bound)
